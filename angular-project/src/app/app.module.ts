@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

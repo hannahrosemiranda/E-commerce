@@ -5,12 +5,15 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
+import { CartComponent } from './cart/cart.component';
+CartComponent
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'header', component: HeaderComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'products', component: ProductsComponent}
+  {path: 'products', component: ProductsComponent},
+  {path: 'cart', component: CartComponent}
 ]
 
 @NgModule({

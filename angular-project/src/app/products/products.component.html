@@ -2,13 +2,13 @@
 <div class="container">
   <h1>Products</h1>
   <div class="row">
-    <ng-container *ngFor="let product of products">
+    <ng-container *ngFor="let product of productlist">
       <div class="card col-md-3">
         <img [src]="product.imageUrl" alt="" />
         <h5>{{ product.name }}</h5>
         <p>{{ product.description }}</p>
         <p><strong>Amount: </strong><span>&#x20B1;</span>{{ product.price }}</p>
-        <button class="btn btn-dark">Add to Cart</button>
+        <button class="btn btn-dark" (click)="addtocart(product)">Add to Cart</button>
       </div>
     </ng-container>
   </div>
