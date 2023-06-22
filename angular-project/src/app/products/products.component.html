@@ -1,12 +1,14 @@
-<ul>
-  <li *ngFor="let product of products">
-    <a routerLink="/product/{{product.id}}">
-      <img [src]="product.imageUrl" [alt]="product.name" />
-      <div class="content">
-        <div class="name">
-          {{ product.name }}
-        </div>
+<div class="container">
+  <h1>Products</h1>
+  <div class="row">
+    <ng-container *ngFor="let product of products">
+      <div class="card col-md-3">
+        <img [src]="product.imageUrl" alt="">
+        <h5>{{ product.name }}</h5>
+        <p>{{ product.description }}</p>
+        <p><strong>Amount: </strong><span>&#x20B1;</span>{{ product.price }}</p>
+        <button class="btn btn-dark">Add to Cart</button>
       </div>
-    </a>
-  </li>
-</ul>
+    </ng-container>
+  </div>
+</div>
