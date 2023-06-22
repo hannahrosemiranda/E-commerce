@@ -150,7 +150,7 @@ export const sample_products: Product[] = [
     name: 'Womens White Shoes',
     price: 2000,
     description: 'White Shoes',
-    imageUrl: 'assets/images/photo19.png',
+    imageUrl: 'assets/images/photo19.jpg',
   },
 
   {
