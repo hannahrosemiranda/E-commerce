@@ -160,4 +160,12 @@ export const sample_products: Product[] = [
     description: 'Sandals',
     imageUrl: 'assets/images/photo20.png',
   },
+
+  {
+    id: '21',
+    name: 'Womens Sandals',
+    price: 1800,
+    description: 'Sandals',
+    imageUrl: 'assets/images/photo21.png',
+  },
 ];
