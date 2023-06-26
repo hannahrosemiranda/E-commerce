@@ -5,29 +5,35 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
-public productList = new BehaviorSubject<any>([])
-public cartitemlist:any=[]
-  constructor() { }
+  public productList = new BehaviorSubject<any>([]);
+  public cartitemlist: any[] = [];
 
-  //get
-  getproduct(){
+  constructor() {}
+
+  // Get products
+  getproduct() {
     return this.productList.asObservable();
   }
 
-  //add to cart
-  addtocart(product:any){
+  // Add product to cart
+  addtocart(product: any) {
     this.cartitemlist.push(product);
     this.productList.next(this.cartitemlist);
     this.gettotalprice();
   }
 
-  // total price
-  gettotalprice():number{
+  // Get total price
+  gettotalprice(): number {
     let grandtotal = 0;
-    this.cartitemlist.map((a:any)=>{
-      grandtotal +=a.total;
-      // console.log(grandtotal);
-    })
+    this.cartitemlist.forEach((a: any) => {
+      grandtotal += a.total;
+    });
     return grandtotal;
+  }
+
+  // Send order to the server
+  sendOrder(order: any) {
+    // Replace this with your actual logic for sending the order to the server
+    console.log('Sending order:', order);
   }
 }

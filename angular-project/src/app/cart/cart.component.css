@@ -8,3 +8,30 @@ h1 {
 img {
   width: 20%;
 }
+
+.btn-danger {
+  background-color: black;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: red;
+}
+
+.btn-success {
+  background-color: black;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: green;
+}
+
+.btn-warning {
+  background-color: black;
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: orange;
+}
