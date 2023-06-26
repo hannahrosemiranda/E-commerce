@@ -6,9 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
-
-  @Input() cartItems: number = 5; // The initial number of items in the cart
+  @Input() cartItems: number = 0; // The initial number of items in the cart
   @Output() addToCartClicked: EventEmitter<void> = new EventEmitter<void>();
 
   addToCart() {
