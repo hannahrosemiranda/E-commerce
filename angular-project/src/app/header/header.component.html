@@ -21,6 +21,10 @@
       </ul>
     </div>
     <div>
+
+      <i class='bx bx-shopping-bag' routerLink="/cart"></i>
+      <div style="font-size: 10px;" class="badge bg-dark">{{totalitem}}</div>
+
       <a class="cart-icon" routerLink="/cart">
         <i class='bx bx-shopping-bag' (click)="addToCart()"></i>
         <span class="badge cartBadge">{{ cartItems }}</span>
