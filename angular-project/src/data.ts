@@ -3,33 +3,33 @@ import { Product } from './app/shared/models/product';
 export const sample_products: Product[] = [
   {
     id: '1',
-    name: 'Mens Black Shoes',
+    name: 'Men\'s Black Shoes',
     price: 2000,
-    description: 'Black shoes',
+    description: 'A water-repelling leathers can keep feet dry without sacrificing comfort or style.',
     imageUrl: 'assets/images/photo1.png',
   },
 
   {
     id: '2',
-    name: 'Mens sneakers',
+    name: 'Men\'s Sneakers',
     price: 1500,
-    description: 'sneakers',
+    description: 'Designed for sports or other forms of physical exercise, but which are also widely used for everyday casual wear.',
     imageUrl: 'assets/images/photo2.png',
   },
 
   {
     id: '3',
-    name: 'Mens Black Sneakers',
+    name: 'Men\'s Black Sneakers',
     price: 2000,
-    description: 'Black shoes',
+    description: 'Common Men Lightweight Casual Sneaker Slip-On Shoes JIB-61000.',
     imageUrl: 'assets/images/photo3.png',
   },
 
   {
     id: '4',
-    name: 'Mens Black Rubber Shoes',
+    name: 'Men\'s Black Rubber Shoes',
     price: 1000,
-    description: 'Rubber Shoes',
+    description: 'Designed to be worn in corrosive environments, especially in chemical industry and mines.',
     imageUrl: 'assets/images/photo4.png',
   },
 
@@ -37,79 +37,79 @@ export const sample_products: Product[] = [
     id: '5',
     name: 'Basketball Shoes',
     price: 3000,
-    description: 'Basketball shoes',
+    description: 'Designed with a heavier, more durable rubber outsole to resist wear.',
     imageUrl: 'assets/images/photo5.png',
   },
 
   {
     id: '6',
-    name: 'Mens Denim Polo',
+    name: 'Men\'s Denim Polo',
     price: 1500,
-    description: 'Polo Shirt',
+    description: 'Ralph Lauren\'s collection of denim can be styled for any occasion. Our everyday must-have denim shirts make a great pair with chinos or black pants.',
     imageUrl: 'assets/images/photo6.png',
   },
 
   {
     id: '7',
-    name: 'Mens Checkered Polo',
+    name: 'Men\'s Checkered Polo',
     price: 900,
-    description: 'Chekered Polo',
+    description: 'Full printed long sleeve shirt, collared neckline, and button down.',
     imageUrl: 'assets/images/photo7.png',
   },
 
   {
     id: '8',
-    name: 'Mens Striped Polo',
+    name: 'Men\'s Striped Polo',
     price: 900,
-    description: 'Striped Polo',
+    description: 'It is made with pique material, so it feels smooth and is lightweight. An everyday staple that can be worn in many ways, from sporty to casual.',
     imageUrl: 'assets/images/photo8.png',
   },
 
   {
     id: '9',
-    name: 'Mens Long Sleeves Polo',
+    name: 'Men\'s Long Sleeves Polo',
     price: 1500,
-    description: 'Long Sleeves Polo',
+    description: 'The Long Sleeve Polo - a classic pique polo with long sleeves and buttoning cuffs.',
     imageUrl: 'assets/images/photo9.png',
   },
 
   {
     id: '10',
-    name: 'Mens Summer Polo',
+    name: 'Men\'s Summer Polo',
     price: 900,
-    description: 'Summer Polo',
+    description: 'Made from a moisture-wicking and lightweight fabric, this shirt is also antibacterial and will neutralise odours. ',
     imageUrl: 'assets/images/photo10.png',
   },
 
   {
     id: '11',
-    name: 'Womens Black Dress',
+    name: 'Women\'s Black Dress',
     price: 2000,
-    description: 'Black Dress',
+    description: 'A long-lasting, versatile, affordable, and widely accessible black dress for you.',
     imageUrl: 'assets/images/photo11.png',
   },
 
   {
     id: '12',
-    name: 'Womens Black Shirt',
+    name: 'Women\'s Black Shirt',
     price: 900,
-    description: 'Black Shirt',
+    description: 'A unique piece of clothing that conveys elegance, sophistication and confidence.',
     imageUrl: 'assets/images/photo12.png',
   },
 
   {
     id: '13',
-    name: 'Womens Summer Dress',
+    name: 'Women\'s Summer Dress',
     price: 900,
-    description: 'Summer Dress',
+    description: 'A casual dress perfect for warm weather, a lightweight fabric, cotton, and loose-fitting. ',
     imageUrl: 'assets/images/photo13.png',
   },
 
   {
     id: '14',
-    name: 'Womens White Polo',
+    name: 'Women\'s White Polo',
     price: 950,
-    description: 'White Polo',
+    description: 'Comfortable blouse in silky rayon. Wrinkle-resistant for easy care.',
     imageUrl: 'assets/images/photo14.png',
   },
 
@@ -117,55 +117,55 @@ export const sample_products: Product[] = [
     id: '15',
     name: 'Khaki Dress',
     price: 850,
-    description: 'Dress',
+    description: 'A light yellowish-brown cloth made of cotton or wool.',
     imageUrl: 'assets/images/photo15.png',
   },
 
   {
     id: '16',
-    name: 'Womens sneakers',
+    name: 'Women\'s Sneakers',
     price: 2000,
-    description: 'Sneakers',
+    description: 'Textile and synthetic uppers, crafted for any action, reflective 3M detailing, and innovative element adds a dynamic touch.',
     imageUrl: 'assets/images/photo16.png',
   },
 
   {
     id: '17',
-    name: 'Womens sneakers',
+    name: 'Women\'s Brown Sneakers',
     price: 3000,
-    description: 'Sneakers',
+    description: 'A sneakers that features a lightweight air cushion fabric, synthetic upper, and textured rubber outsole for durability and traction. A sneakers with extra padding around the ankle for all-day comfort.',
     imageUrl: 'assets/images/photo17.png',
   },
 
   {
     id: '18',
-    name: 'Womens Flipflops',
+    name: 'Women\'s Flipflops',
     price: 2000,
-    description: 'Flipflops',
+    description: 'Our high energy foam midsole combines with our advanced insole for added support and superior cushioning, returning energy as you move.',
     imageUrl: 'assets/images/photo18.png',
   },
 
   {
     id: '19',
-    name: 'Womens White Shoes',
+    name: 'Women\'s White Doll Shoes',
     price: 2000,
-    description: 'White Shoes',
+    description: 'A closed, low-cut shoe perfect for your comfort and fashion needs.',
     imageUrl: 'assets/images/photo19.jpg',
   },
 
   {
     id: '20',
-    name: 'Womens Sandals',
+    name: 'Women\'s Sandals',
     price: 2000,
-    description: 'Sandals',
+    description: 'A footwear consisting of a sole held to the wearer\'s foot by straps going over the instep and around the ankle.',
     imageUrl: 'assets/images/photo20.png',
   },
 
   {
     id: '21',
-    name: 'Womens Sandals',
+    name: 'Women\'s Stylish Sandals',
     price: 1800,
-    description: 'Sandals',
+    description: ' Take your standard beachwear to the next level with these supportive and sturdy leather and rubber sandals.',
     imageUrl: 'assets/images/photo21.png',
   },
 ];
