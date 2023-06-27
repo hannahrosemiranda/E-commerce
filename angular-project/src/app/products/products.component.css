@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .card img {
   width: 200px;
   height: 200px;
@@ -23,8 +24,6 @@ h1 {
   margin: 30px;
   padding: 20px;
 }
-
-
 
 h5 {
   white-space: nowrap;

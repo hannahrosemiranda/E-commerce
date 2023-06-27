@@ -9,7 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { NgToastModule } from 'ng-angular-popup';
 
 @NgModule({
   declarations: [
@@ -18,14 +18,10 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     ProductsComponent,
     CartComponent,
-    ContactComponent
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, NgToastModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

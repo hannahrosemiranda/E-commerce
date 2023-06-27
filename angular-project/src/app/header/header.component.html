@@ -1,29 +1,35 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand brand-name" href="#">Selling<span>.</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand brand-name" href="#">Shapi<span>.</span></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/products">Products</a>
+          <a class="nav-link" routerLink="/products">PRODUCTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Order</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
+          <a class="nav-link" href="/contact">CONTACT US</a>
         </li>
       </ul>
     </div>
 
-    <div>
-      <i class='bx bx-shopping-bag' routerLink="/cart"></i>
-      <div style="font-size: 10px;" class="badge bg-dark">{{totalitem}}</div>
+    <div class="cart">
+      <p>Username</p>
+      <i class="bx bx-shopping-bag" routerLink="/cart"></i>
+      <div class="badge bg-red" routerLink="/cart">{{ totalitem }}</div>
     </div>
   </div>
 </nav>

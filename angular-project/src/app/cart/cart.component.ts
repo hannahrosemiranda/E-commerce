@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { CartService } from '../services/cart.service';
-
+import { Router } from '@angular/router';
+import { NgToastService } from 'ng-angular-popup';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  public products: any[] = [];
+  public products!: any[];
   public grandTotal: number = 0;
 
-  constructor(private cart: CartService, private router: Router) {}
+  constructor(
+    private cart: CartService,
+    private router: Router,
+    private toast: NgToastService
+  ) {}
 
   ngOnInit(): void {
     this.cart.getproduct().subscribe((res: any[]) => {
@@ -32,23 +36,24 @@ export class CartComponent implements OnInit {
   }
 
   getProductTotal(product: any): number {
-    return product.price && product.quantity ? product.price * product.quantity : 0;
+    return product.price && product.quantity
+      ? product.price * product.quantity
+      : 0;
   }
 
-  removeProduct(index: number): void {
-    this.products.splice(index, 1);
-    this.calculateGrandTotal();
-  }
-
-  emptyCart(): void {
-    this.products = [];
-    this.calculateGrandTotal();
+  emptyCart() {
+    this.toast.warning({
+      detail: 'Deleted all from cart',
+      summary: 'all items have been deleted',
+      duration: 3000,
+    });
+    this.cart.removeallcart();
   }
 
   checkOut(): void {
     const order = {
       products: this.products,
-      total: this.grandTotal
+      total: this.grandTotal,
     };
 
     // Send the order to the server using the CartService
@@ -56,5 +61,14 @@ export class CartComponent implements OnInit {
 
     // Perform any other necessary actions, such as navigating to a checkout page or displaying a success message
     this.router.navigate(['/checkout']); // Replace '/checkout' with the appropriate route for your checkout page
+  }
+
+  delete(product: any) {
+    this.toast.warning({
+      detail: 'Deleted from cart',
+      summary: 'item has been deleted',
+      duration: 1000,
+    });
+    this.cart.removecartitem(product);
   }
 }

@@ -3,13 +3,12 @@ import { Product } from '../shared/models/product';
 import { sample_products } from 'src/data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
+  constructor() {}
 
-  constructor() { }
-
-  getAll():Product[] {
+  getAll(): Product[] {
     return sample_products;
   }
 }
