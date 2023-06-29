@@ -1,6 +1,6 @@
 import { Product } from './app/shared/models/product';
 
-export const sample_products: Product[] = [
+export const ProductsData: Product[] = [
   {
     id: '1',
     name: "Men's Black Shoes",

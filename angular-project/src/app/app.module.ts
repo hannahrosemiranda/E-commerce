@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgToastModule } from 'ng-angular-popup';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NgToastModule } from 'ng-angular-popup';
     ProductsComponent,
     CartComponent,
     ContactComponent,
+    LoginpageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, NgToastModule],
   providers: [],

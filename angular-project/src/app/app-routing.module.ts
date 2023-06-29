@@ -7,6 +7,7 @@ import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'loginpage', component: LoginpageComponent }
 ];
 
 @NgModule({

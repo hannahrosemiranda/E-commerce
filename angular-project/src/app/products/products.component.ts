@@ -11,6 +11,7 @@ import { NgToastService } from 'ng-angular-popup';
 })
 export class ProductsComponent implements OnInit {
   productlist: Product[] = [];
+
   constructor(
     private productService: ProductService,
     private cart: CartService,
@@ -29,5 +30,11 @@ export class ProductsComponent implements OnInit {
     });
     this.cart.addtocart(product);
     console.log(product);
+
+    function handleClick(this: any) {
+    this.isButtonClicked = true;
+    // Add your desired action here
+    }
+
   }
 }

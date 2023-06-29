@@ -33,7 +33,7 @@ export class CartService {
 
   // Send order to the server
   sendOrder(order: any) {
-    // Replace this with your actual logic for sending the order to the server
+    // Logic for sending the order to the server
     console.log('Sending order:', order);
   }
 
@@ -49,4 +49,5 @@ export class CartService {
     });
     this.productList.next(this.cartitemlist);
   }
+
 }
