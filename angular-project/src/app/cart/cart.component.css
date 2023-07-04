@@ -56,7 +56,6 @@ h4 {
 }
 
 .buttons p {
-  display: inline-block;
   float: right;
   color: red;
 }

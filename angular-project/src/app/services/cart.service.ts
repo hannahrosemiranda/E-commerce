@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { Cart } from '../shared/models/cart';
 
 @Injectable({
   providedIn: 'root',
@@ -7,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 export class CartService {
   public productList = new BehaviorSubject<any>([]);
   public cartitemlist: any[] = [];
+  cartSubject: any;
 
   constructor() {}
 
@@ -20,6 +22,16 @@ export class CartService {
     this.cartitemlist.push(product);
     this.productList.next(this.cartitemlist);
     this.gettotalprice();
+  }
+
+  //get cart
+
+  getCartObservable(): Observable<Cart> {
+    return this.cartSubject.asObservable();
+  }
+
+  getCart(): Cart {
+    return this.cartSubject.value;
   }
 
   // Get total price
@@ -49,5 +61,5 @@ export class CartService {
     });
     this.productList.next(this.cartitemlist);
   }
-
 }
+

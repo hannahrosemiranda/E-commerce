@@ -11,7 +11,7 @@
   background: white;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid green;
+  border: 1px solid darkslategray;
 }
 
 #chk {
@@ -38,7 +38,7 @@ label {
 input {
   width: 60%;
   height: 20px;
-  background: lightgreen;
+  background: lightgray;
   justify-content: center;
   display: flex;
   margin: 20px auto;
@@ -55,7 +55,7 @@ button {
   justify-content: center;
   display: block;
   color: #fff;
-  background: green;
+  background: black;
   font-size: 1em;
   font-weight: bold;
   margin-top: 20px;
@@ -67,7 +67,8 @@ button {
 }
 
 button:hover {
-  color: gray;
+  background-color: #585756;
+  color: white;
 }
 
 .login {

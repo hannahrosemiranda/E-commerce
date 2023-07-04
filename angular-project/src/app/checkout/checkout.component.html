@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="content">
+    <h2 class="title">Order Form</h2>
+    <form [formGroup]="checkoutForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" formControlName="name" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" class="form-control" formControlName="address" required>
+      </div>
+    </form>
+    <!-- Render cart component here -->
+    <app-cart [order]="order"></app-cart>
+  </div>
+  <div class="map">
+    <h2 class="title">Choose Your Address On Map</h2>
+    <!-- Place your map component or content here -->
+  </div>
+  <div class="buttons-container">
+    <div class="buttons">
+      <button class="btn" (click)="createOrder()">Go To Payment</button>
+    </div>
+  </div>
+</div>

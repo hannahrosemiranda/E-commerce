@@ -1,11 +1,11 @@
 .brand-name {
   font-size: 2rem;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 
 .brand-name span {
-  color: gray;
+  color: black;
 }
 
 .nav-link {
@@ -14,7 +14,7 @@
 }
 
 nav {
-  background-color: black;
+  background-color: lightgray;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -27,7 +27,7 @@ padding: 0;
 }
 
 .navbar-nav a {
-  color: white;
+  color: black;
 }
 
 i {
@@ -39,12 +39,12 @@ p {
 }
 
 .bx {
-  color: white;
+  color: black;
   margin-left: 25px;
 }
 
 .cart p {
-  color: white;
+  color: black;
 }
 
 /* Badge styling */
@@ -52,7 +52,7 @@ p {
   background-color: #C70D3A;
   color: white;
   font-size: 15px;
-  padding: 5px 6px;
+  padding: 5px 7px;
   border-radius: 50%;
   margin: 0;
   cursor: pointer;

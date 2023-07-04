@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'loginpage', component: LoginpageComponent }
+  { path: 'loginpage', component: LoginpageComponent },
+  { path: 'checkout', component: CheckoutComponent }
 ];
 
 @NgModule({
